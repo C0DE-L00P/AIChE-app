@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/cover4"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/aiche_logo"
+            android:layout_width="@dimen/aiche_logo"
+            android:layout_height="@dimen/aiche_logo"
+            android:alpha="0"
+            tools:alpha="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/simple_logo"
+            android:onClick="WhoAreWe"/>
+
+        <ImageView
+            android:id="@+id/aiche_text"
+            android:layout_width="@dimen/aiche_font_width"
+            android:layout_height="@dimen/aiche_font_height"
+            android:alpha="0"
+            tools:alpha="1"
+            android:src="@drawable/simple_aiche"
+            android:onClick="WhoAreWe"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/supportBtm"
+            android:layout_width="@dimen/chat_height"
+            android:layout_height="@dimen/chat_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/chat"
+            android:onClick="Submit"/>
+
+        <ImageView
+            android:id="@+id/notificationBtm"
+            android:layout_width="@dimen/chat_height"
+            android:layout_height="@dimen/chat_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"/>
+
+    </RelativeLayout>
+
+    <GridLayout
+
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:padding="14dp"
+        android:rowCount="2">
+
+        <!-- Row 1 -->
+
+        <!-- Column 1 -->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eventsCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="14dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/sound" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:text="Events"
+                    android:textColor="#9e16ec"
+                    android:textSize="@dimen/main_taps_font"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/trainingCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="14dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/internship" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="3"
+                    android:text="Internships"
+                    android:textColor="#c0311a"
+                    android:textSize="@dimen/main_taps_font"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/studyCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="14dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/study" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="3"
+                    android:text="Study"
+                    android:textColor="#2bace0"
+                    android:textSize="@dimen/main_taps_font"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/knowledgeCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="14dp"
+
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/knowledge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="3"
+                    android:text="Knowledge"
+                    android:textColor="#5fb57d"
+                    android:textSize="@dimen/main_taps_font"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>

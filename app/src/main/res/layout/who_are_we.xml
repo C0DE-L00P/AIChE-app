@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/simple_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="AIChE SUSC"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="About AIChE Suez:\n\nAIChE-Suez (American Institute of Chemical Engineers Suez University-Student Chapter) is a branch from the world's leading organization for chemical engineering professionals, with over 40,000 members from over 90 countries. AIChE has the breadth of resources and expertise you need whether you are in core process industries or emerging areas, such as nanobiotechnology.\n\nOur Vision:\n\nAIChE SU-Student chapter is so ambitious to generate a creative,qualified and professional student having the required field experience through courses, field trips, Internships and scientific competitions.\n\nOur Mission:\n\nminimize the gap between under graduated students and professional engineers.\n\nWhy AIChE-Suez:\n\nAs a member, you can access information on recognized and promising chemical engineering processes and methods. Connect with a global network of intelligent, resourceful colleagues and their shared wisdom. Find learning opportunities from recognized authorities.Move forward professionally with AIChE and enrich the world we live in."
+        />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

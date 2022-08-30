@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="aiche_logo">120dp</dimen>
+    <dimen name="aiche_font_width">120dp</dimen>
+    <dimen name="aiche_font_height">40dp</dimen>
+    <dimen name="header_height">260dp</dimen>
+    <dimen name="main_taps_font">16sp</dimen>
+    <dimen name="technical_height">60dp</dimen>
+    <dimen name="chat_height">50dp</dimen>
+    <dimen name="slider_title">24sp</dimen>
+    <dimen name="slider_image">140dp</dimen>
+    <dimen name="slider_detail">18sp</dimen>
+    <dimen name="start_course_list">190dp</dimen>
+
+    <dimen name="header_event_height">260dp</dimen>
+    <dimen name="event">220dp</dimen>
+    <dimen name="course">147dp</dimen>
+    <dimen name="going_btn_place">290dp</dimen>
+
+    <dimen name="header_study_height">100dp</dimen>
+    <dimen name="header_study2_height">130dp</dimen>
+    <dimen name="header_study_margin">70dp</dimen>
+</resources>

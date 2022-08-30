@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/study_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+        <WebView
+            android:id="@+id/webViewDownload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+<WebView
+    android:id="@+id/webView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/study_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_study_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/study_header1"/>
+
+        <ImageView
+            android:id="@+id/study_header2"
+            android:layout_width="@dimen/header_study2_height"
+            android:layout_height="@dimen/header_study2_height"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study_header2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/studycircle"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/studycircle"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/yearImageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Search"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+
+
+            <TextView
+                android:id="@+id/hard2use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="hard to use ?"
+                android:layout_below="@id/studycircle"
+                android:layout_alignRight="@id/studycircle"
+                android:onClick="go2study4low"/>
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>
+</RelativeLayout>

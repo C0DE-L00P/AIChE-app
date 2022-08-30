@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr">
+
+<WebView
+    android:id="@+id/webViewDownload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>
+<WebView
+    android:id="@+id/webView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/study_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_study_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/study_header1"/>
+
+        <ImageView
+            android:id="@+id/study_header2"
+            android:layout_width="@dimen/header_study2_height"
+            android:layout_height="@dimen/header_study2_height"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study_header2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:id="@+id/text_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:text="Select year"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                    android:textColor="#000"/>
+
+
+                        <Spinner
+                            android:id="@+id/spinner_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            tools:background="#000"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                    android:layout_marginBottom="50dp">
+                <TextView
+                    android:id="@+id/text_simister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select semester"
+                    android:textSize="30sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinner_semester"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    tools:background="#000"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/studycircle"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/search_low"
+                    android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

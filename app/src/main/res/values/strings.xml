@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AIChE</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_previously_started">False</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tap_name">Ask</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="send_button_label">Send</string>
+    <string-array name="languages">
+        <item/>
+        <item>AR</item>
+        <item>EN</item>
+    </string-array> <string-array name="years">
+        <item/>
+        <item>Prep</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array> <string-array name="simisters">
+        <item/>
+        <item>1st</item>
+        <item>2nd</item>
+    </string-array>
+</resources>

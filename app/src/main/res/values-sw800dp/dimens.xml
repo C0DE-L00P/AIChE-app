@@ -1,0 +1,25 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="aiche_logo">160dp</dimen>
+    <dimen name="aiche_font_width">160dp</dimen>
+    <dimen name="aiche_font_height">60dp</dimen>
+    <dimen name="header_height">420dp</dimen>
+    <dimen name="start_course_list">330dp</dimen>
+    <dimen name="header_event_height">420dp</dimen>
+    <dimen name="main_taps_font">26sp</dimen>
+    <dimen name="technical_height">90dp</dimen>
+    <dimen name="chat_height">80dp</dimen>
+    <dimen name="slider_title">36sp</dimen>
+    <dimen name="slider_detail">24sp</dimen>
+    <dimen name="event">340dp</dimen>
+    <dimen name="course">260dp</dimen>
+    <dimen name="going_btn_place">423dp</dimen>
+
+    <dimen name="header_study_height">160dp</dimen>
+    <dimen name="header_study_margin">130dp</dimen>
+    <dimen name="header_study2_height">180dp</dimen>
+
+</resources>
